@@ -1,0 +1,20 @@
+refer here for link:https://www.odoo.com/documentation/15.0/administration/install/install.html#setup-install-editions
+ git clone https://github.com/odoo/odoo.git
+ python3 --version
+ sudo apt update
+ sudo apt install python3-pip
+installing postgresssql: sudo apt install postgresql postgresql-client
+sudo -u postgres createuser -s $USER
+createdb $USER
+sudo apt install python3-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev \
+    libtiff5-dev libjpeg8-dev libopenjp2-7-dev zlib1g-dev libfreetype6-dev \
+    liblcms2-dev libwebp-dev libharfbuzz-dev libfribidi-dev libxcb1-dev libpq-dev
+mkdir CommunityPath
+cd CommunityPath
+pip3 install setuptools wheel
+cd ..
+pip3 install -r requirements.txt
+sudo apt install nodejs
+sudo apt install npm
+sudo npm install -g rtlcss
+python3 odoo-bin --addons-path=addons -d mydb
