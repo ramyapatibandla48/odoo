@@ -1,1 +1,11 @@
 https://linuxize.com/post/how-to-install-odoo-15-on-ubuntu-20-04/
+https://www.odoo.com/documentation/15.0/administration/install/install.html#id13 - actual page 
+
+1. Ensure you have a git repository and this playbook/role is part of it.
+2. Write an Ansible playbook/role with variables you perform the Installation from source
+		of odoo commerce
+	https://www.odoo.com/documentation/15.0/administration/install/install.html#id10
+	
+3. Donot use
+package repository
+apt or yum
